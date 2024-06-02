@@ -1,0 +1,152 @@
+@font-face {
+  font-family: outfit;
+  src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+@font-face {
+  font-family: young-serif;
+  src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+}
+
+.main {
+  width: 60%;
+  height: 100%;
+  font-size: 16px;
+  font-family: 'outfit', 'Courier New', Courier, monospace;
+  color: hsl(30, 10%, 34%);
+  margin: 0 auto;
+  padding: 30px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: 400px;
+  border-radius: 15px;
+}
+
+h1 {
+  font-family: 'young-serif', 'Courier New', Courier, monospace;
+  font-size: 3rem;
+  margin: 3rem 0 2rem 0;
+  color: hsl(24, 5%, 18%);
+}
+
+h2 {
+  font-family: 'young-serif', 'Courier New', Courier, monospace;
+  color: hsl(14, 45%, 36%);
+}
+
+.description {
+  margin-bottom: 2rem;
+}
+
+.prep {
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+.prep h3 {
+  color: hsl(332, 51%, 32%);
+}
+.prep ul {
+  padding-left: 1rem;
+}
+.prep li {
+  padding-left: 1rem;
+}
+.prep li::marker {
+  color: hsl(332, 51%, 32%);
+}
+.prep span {
+  font-weight: bold;
+  margin-right: 0.2rem;
+}
+
+.ingredients ul {
+  padding-left: 1rem;
+}
+.ingredients li {
+  color: hsl(30, 10%, 34%);
+  padding-left: 1rem;
+  line-height: 2rem;
+}
+
+.ingredients li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+.instructions span {
+  font-weight: bold;
+}
+.instructions ol {
+  padding-left: 1rem;
+}
+.instructions li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: bold;
+}
+.instructions li {
+  padding-left: 1rem;
+  margin: 0.5rem;
+  line-height: 1.5rem;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+}
+
+.nutrition-details {
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+}
+td {
+  border-bottom: solid 1px hsl(30, 10%, 34%);
+  padding: 1rem;
+  padding-left: 2rem;
+}
+td:last-child {
+  font-weight: bold;
+  color: hsl(14, 45%, 36%);
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    margin: 0;
+  }
+  .main {
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  img {
+    border-radius: 0;
+    height: 200px;
+  }
+
+  main {
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+}
